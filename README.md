@@ -1,4 +1,4 @@
-Postmortem: Outage of Web Application Authentication Service
+#Postmortem: Outage of Web Application Authentication Service
 Issue Summary
 Duration: August 22, 2024, from 03:15 UTC to 06:45 UTC (3 hours 30 minutes)
 
@@ -28,7 +28,8 @@ Improvements/Fixes:
 Deployment Process Review: The deployment process will be reviewed and updated to include a more thorough verification of environment variable configurations before pushing changes to production.
 Environment Variable Management: Implement a centralized configuration management tool to avoid manual misconfigurations.
 Cache Invalidation: Establish better practices for cache invalidation to ensure that configuration changes take effect immediately across all instances.
-TODO List:
+
+#TODO List:
 
 Patch Deployment Pipeline: Update the deployment pipeline scripts to include environment variable validation checks.
 Centralized Configurations: Set up and migrate all environment variables to a centralized configuration management system like Consul or etcd.
